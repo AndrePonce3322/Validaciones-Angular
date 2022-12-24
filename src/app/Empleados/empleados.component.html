@@ -1,0 +1,11 @@
+<li>Nombre del empleado: {{nombre.value==""? "Escribe tu nombre":nombre.value.toUpperCase()}}</li>
+<li>Edad del empleado: {{edad.value==""? "Escribe tu edad":edad.value}}</li>
+<li>Empleado Masculino o Femenino: {{genero.value==""? "Escribe tu genero":genero.value.toUpperCase()}}</li>
+<li>Identidad del empleado: {{identidad.value==""? "Escribe tu identidad":identidad.value.toUpperCase()}}</li>
+<li>Nombre de la empresa: {{empresa.value==""? "Escribe el nombre de la empresa":empresa.value.toUpperCase()}} </li>
+<br>
+<h6>Nombre del empleado: <input type="string" #nombre (keyup)="0" placeholder="Example: Juan perez Garcia"></h6>
+<h6>Edad del empleado: <input type="number" #edad (keyup)="null" placeholder="??"></h6>
+<h6>Empleado Masculino o Femenino: <input type="string" #genero (keyup)="null" placeholder="Chose one of them"></h6>
+<h6>Identidad del empleado: <input type="string" #identidad (keyup)="null" placeholder="0801-????-????"></h6>
+<h6>Nombre de la empresa: <input type="string" #empresa (keyup)="null" placeholder="Example: Google Inc"></h6>
